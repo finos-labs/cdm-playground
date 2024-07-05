@@ -20,10 +20,11 @@ mvn clean install
 ## Usage example
 
 This project can be used to verify the FINOS CDM dependency resolution and resolve CDM-specific implementation questions by running a set of unit tests with widely used functionalities across industry solutions:
+
 - **Serialization:** Basic de/serialization tests from/to JSON using the `RosettaObjectMapper`.
 - **Object validation:** Demonstrates the usage of the native `RosettaTypeValidator` evaluating cardinality and business conditions.
 - **Qualification:** Product-based qualification mechanism built in CDM using native `QualifyFunctionFactory`.
-- **Event driven transitions:** A set of post trade event executions using built-in functions within the model.
+- **Event driven transitions:** A set of post trade event executions using built-in model functions.
 
 All samples included in the project are publicly available at [FINOS CDM](https://github.com/finos/common-domain-model) repository. The playground project uses samples for the version defined in [pom's](pom.xml) property `finos.cdm.version`
 
@@ -32,6 +33,7 @@ _For more examples and usage, please refer to the [FINOS CDM](https://github.com
 ## Development setup
 
 The project uses:
+
 - JDK 11
 - Maven
 
