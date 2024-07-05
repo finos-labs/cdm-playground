@@ -2,44 +2,51 @@
 
 # CDM Playground
 
-Short blurb about what your project does.
+Welcome to the Common Domain Model Playground for Java and Python repository. This project contains source code with native CDM functionalities use cases. It also serves as training material for introductory CDM implementation courses.
 
-## Installation
-
+## Installation - same as Development setup
 OS X & Linux:
 
 ```sh
-npm install my-crazy-module --save
+mvn clean install
 ```
 
 Windows:
 
 ```sh
-edit autoexec.bat
+mvn clean install
 ```
 
 ## Usage example
 
-A few motivating and useful examples of how your project can be used. Spice this up with code blocks and potentially screenshots / videos ([LiceCap](https://www.cockos.com/licecap/) is great for this kind of thing).
+This project can be used to verify the FINOS CDM dependency resolution and resolve CDM-specific implementation questions by running a set of unit tests with widely used functionalities across industry solutions:
+- **Serialization:** Basic de/serialization tests from/to JSON using the `RosettaObjectMapper`.
+- **Object validation:** Demonstrates the usage of the native `RosettaTypeValidator` evaluating cardinality and business conditions.
+- **Qualification:** Product-based qualification mechanism built in CDM using native `QualifyFunctionFactory`.
+- **Event driven transitions:** A set of post trade event executions using built-in functions within the model.
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+All samples included in the project are publicly available at [FINOS CDM](https://github.com/finos/common-domain-model) repository. The playground project uses samples for the version defined in [pom's](pom.xml) property `finos.cdm.version`
+
+_For more examples and usage, please refer to the [FINOS CDM](https://github.com/finos/common-domain-model)._
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+The project uses:
+- JDK 11
+- Maven
 
 ```sh
-make install
-npm test
+mvn clean verify
 ```
 
 ## Roadmap
 
 List the roadmap steps; alternatively link the Confluence Wiki page where the project roadmap is published.
 
-1. Item 1
-2. Item 2
-3. ....
+1. Expand test coverage with functionalities around function binding through dependency injection
+2. Expand event execution test coverage 
+3. Include a sample event classification application built with CDM python distribution
+4. ...
 
 ## Contributing
 
