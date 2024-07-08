@@ -4,19 +4,6 @@
 
 Welcome to the Common Domain Model Playground for Java and Python repository. This project contains source code with native CDM functionalities use cases. It also serves as training material for introductory CDM implementation courses.
 
-## Installation - same as Development setup
-OS X & Linux:
-
-```sh
-mvn clean install
-```
-
-Windows:
-
-```sh
-mvn clean install
-```
-
 ## Usage example
 
 This project can be used to verify the FINOS CDM dependency resolution and resolve CDM-specific implementation questions by running a set of unit tests with widely used functionalities across industry solutions:
